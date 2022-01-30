@@ -1,0 +1,130 @@
+@import '../../assets/scss/variables/colors.scss';
+@import '../../assets/scss/variables/font.scss';
+
+.home {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    overflow-x: hidden;
+
+    &-section {
+        margin-bottom: 40px;
+        max-width: 2256px;
+        overflow-x: hidden;
+
+        &:nth-child(2) {
+            h2 {
+                margin-left: 0;
+            }
+        }
+
+        &__top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            margin-bottom: 20px;
+            justify-content: space-between;
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                margin-left: 20px;
+                color: $theme-dark;
+                font-family: $font;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 26px;
+                line-height: 33px;
+            }
+
+            &-left {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+            }
+
+            &-right {
+                margin-right: 100px;
+
+                button {
+                    padding: 0;
+                    opacity: 0.4;
+                    border: none;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    cursor: pointer;
+
+                    img {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &__item {
+            width: 250px;
+            flex-shrink: 0;
+            text-decoration: none;
+            margin-right: 36px;
+            margin-bottom: 10px;
+            color: $theme-dark;
+
+            &:hover {
+                h3 {
+                    text-overflow: unset;
+                    white-space: unset;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border-radius: 5px;
+                }
+            }
+            &-top {
+                position: relative;
+
+                img {
+                    margin: 0;
+                    padding: 0;
+                    width: 250px;
+                    height: 150px;
+                    border-radius: 14px;
+                }
+
+                h3 {
+                    margin: 0;
+                    padding: 0;
+                    color: $theme-dark;
+                    font-family: $font;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-transform: capitalize;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+
+            &-bottom {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-family: $font;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: $theme-dark;
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+}

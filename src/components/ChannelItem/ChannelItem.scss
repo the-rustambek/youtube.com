@@ -1,0 +1,59 @@
+@import '../../assets/scss/variables/colors.scss';
+@import '../../assets/scss/variables/font.scss';
+
+.section {
+    display: flex;
+    align-items: center;
+
+    &__img {
+        width: 400px;
+        height: 200px;
+        display: inline-block;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        max-width: 548px;
+
+        &-title {
+            margin: 0;
+            padding: 0;
+            max-width: 430px;
+            margin-bottom: 10px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 34px;
+            color: $theme-dark;
+        }
+
+        &-text {
+            margin: 0;
+            padding: 0;
+            max-width: 540px;
+            margin-bottom: 20px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $theme-dark;
+            opacity: 0.4;
+        }
+
+        &-viewer {
+            margin: 0;
+            padding: 0;
+            font-family: $font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $theme-dark;
+            opacity: 0.4;
+        }
+    }
+}

@@ -1,0 +1,185 @@
+@import '../../assets/scss/variables/colors.scss';
+@import '../../assets/scss/variables/font.scss';
+
+.video {
+    display: flex;
+    max-width: 2256px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-left: 80px;
+    padding-right: 40px;
+
+    &-top {
+        &__title {
+            margin: 0;
+            padding: 0;
+            font-family: $font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 45px;
+            color: $theme-dark;
+            margin-bottom: 14px;
+        }
+
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 14px;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #2e2e34;
+
+            &-left {
+                display: flex;
+                width: 400px;
+                flex-shrink: 0;
+                align-items: center;
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+                font-family: $font;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 25px;
+                color: #c2c2c2;
+            }
+
+            button {
+                padding: 0;
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                border: none;
+                padding: 6px 12px;
+                margin-right: 10px;
+                background-color: #2e2e34;
+
+                img {
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        button {
+            padding: 0;
+            padding: 10px 12px;
+            margin-left: 20px;
+            background: #ff0000;
+            border-radius: 20px;
+            border: none;
+            font-family: $font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: $theme-dark;
+            cursor: pointer;
+        }
+
+        &__firstText {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 14px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 16px;
+            color: $theme-dark;
+            opacity: 0.4;
+        }
+
+        &__secondText {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 15px;
+            max-width: 750px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $theme-dark;
+            opacity: 0.6;
+        }
+
+        &__firstLink {
+            img {
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+                margin-right: 12px;
+            }
+        }
+
+        &__secondLink {
+            text-decoration: none;
+            font-family: $font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+            color: $theme-dark;
+            opacity: 0.4;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 5px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 33px;
+            color: $theme-dark;
+        }
+    }
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+
+    &-top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-left: 11px;
+            }
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-family: $font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 45px;
+            color: $theme-dark;
+        }
+    }
+}

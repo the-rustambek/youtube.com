@@ -1,0 +1,111 @@
+@import '../../assets/scss/variables/font.scss';
+@import '../../assets/scss/variables/colors.scss';
+
+.sidebar {
+    background-color: #202020;
+    position: fixed;
+    top: 65.8px;
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden;
+    width: 220px;
+    z-index: 2000;
+
+    &:hover {
+        overflow-y: auto;
+    }
+
+    &-top {
+        padding-bottom: 30px;
+    }
+
+    &-center {
+        padding-bottom: 30px;
+    }
+
+    &__menues {
+        &:hover {
+            background-color: rgba(202, 195, 195, 0.2);
+        }
+
+        &-text {
+            margin: 0;
+            padding: 0;
+            padding: 10px 0 10px 10px;
+            color: $theme-dark;
+            margin-left: 13px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        padding-left: 32px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+    &__menues-active {
+        background-color: rgba(202, 195, 195, 0.2);
+
+        svg {
+            path {
+                opacity: 1;
+                fill: $active-color;
+            }
+        }
+        p {
+            opacity: 1;
+            color: $active-color;
+        }
+    }
+
+    &-bottom {
+        padding-bottom: 30px;
+
+        &__title {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 15px;
+            padding-left: 32px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            color: $theme-dark;
+        }
+
+        &__links {
+            margin: 0;
+            padding: 0;
+            padding-left: 32px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+
+            &-text {
+                margin: 0;
+                padding: 0;
+                margin-left: 10px;
+                padding: 10px 0 10px 10px;
+                color: $theme-dark;
+                // opacity: 0.4;
+            }
+
+            &:hover {
+                background-color: rgba(202, 195, 195, 0.2);
+            }
+        }
+    }
+}
+
+.show-more-btn {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-left: 32px;
+}

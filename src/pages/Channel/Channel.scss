@@ -1,0 +1,221 @@
+@import '../../assets/scss/variables/colors.scss';
+@import '../../assets/scss/variables/font.scss';
+
+.channel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__img {
+        padding: 0 40px;
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        overflow-x: hidden;
+
+        &__section {
+            display: flex;
+            max-width: 2256px;
+            padding-left: 40px;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow: hidden;
+
+            &-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-right: 40px;
+                margin-bottom: 20px;
+
+                &__left {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+
+                    div {
+                        margin-left: 14px;
+
+                        h2 {
+                            margin: 0;
+                            padding: 0;
+                            font-family: $font;
+                            color: $theme-dark;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 26px;
+                            line-height: 33px;
+                        }
+
+                        p {
+                            margin: 0;
+                            padding: 0;
+                            font-family: $font;
+                            color: $theme-dark;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 13px;
+                            line-height: 16px;
+                            opacity: 0.4;
+                        }
+                    }
+                }
+
+                &__right {
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        path {
+                            fill: rgb(255, 145, 0);
+                            opacity: 1;
+                        }
+                        cursor: pointer;
+                    }
+
+                    button {
+                        padding: 0;
+                        padding: 10px 12px;
+                        margin-left: 20px;
+                        background: #ff0000;
+                        border-radius: 20px;
+                        border: none;
+                        font-family: $font;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: $theme-dark;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &-content {
+                display: flex;
+                justify-content: space-between;
+                height: 300px;
+                overflow: hidden;
+                margin-right: 40px;
+                margin-bottom: 60px;
+
+                &__left {
+                    &-top {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        list-style-type: none;
+                        align-items: center;
+                        margin-bottom: 54px;
+
+                        &__item {
+                            margin: 0;
+                            padding: 0;
+
+                            button {
+                                background: none;
+                                border: none;
+                                cursor: pointer;
+
+                                img {
+                                    display: block;
+                                }
+                            }
+
+                            &:nth-child(n) {
+                                margin-left: 35px;
+                                margin-right: 35px;
+                            }
+
+                            &:nth-child(1) {
+                                margin-left: 0;
+                            }
+
+                            &:nth-child(7) {
+                                margin-right: 0;
+                            }
+
+                            &-link {
+                                padding: 3px;
+                                font-family: $font;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 23px;
+                                text-decoration: none;
+                                color: $theme-dark;
+                                border-bottom: 2px solid transparent;
+                            }
+
+                            &-link-active {
+                                color: $active-color;
+                                border-color: $active-color;
+                            }
+                        }
+                    }
+                }
+
+                &__right {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        margin: 0;
+                        padding: 0;
+                        font-family: $font;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $theme-dark;
+                        opacity: 0.4;
+                        margin-bottom: 30px;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    &-content {
+                        display: flex;
+                        margin-bottom: 30px;
+                        text-decoration: none;
+                        align-items: center;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                        h3 {
+                            margin: 0;
+                            padding: 0;
+                            font-family: $font;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 23px;
+                            color: $theme-dark;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+
+            &-bottom {
+                display: flex;
+                overflow-x: hidden;
+                overflow-y: hidden;
+            }
+        }
+    }
+}
